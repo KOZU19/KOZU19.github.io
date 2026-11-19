@@ -36,7 +36,7 @@ a{
     color: inherit;
 }
 button:focus-visible,
-a: focus-visible{
+a:focus-visible{
     outline: 2px solid var(--accent);
     outline-offset: 5px;}
 ::selection{
@@ -77,9 +77,9 @@ a: focus-visible{
     backdrop-filter:blur(15px);
     border-bottom:1px solid var(--border);
 }
-.logo{
+.logo {
     display: flex;
-    align-items: : center;
+    align-items: center;
     gap: 10px;
     font-size: 9px;
     font-weight:800;
@@ -195,8 +195,8 @@ a: focus-visible{
     text-align: center;
     letter-spacing:0.1em;
     transition:
-        background 0.3s ease;
-        color 0.3s ease;
+        background 0.3s ease,
+        color 0.3s ease,
         transform 0.3s ease;
 
 }
@@ -236,7 +236,7 @@ a: focus-visible{
     margin-top: 22px;
     font-size:clamp(65px, 10vw, 135px);
     font-weight: 900;
-    line-weight:0.78;
+    line-height: 0.78;
     letter-spacing: -0.09em;
 }
 .section-description{
@@ -299,7 +299,7 @@ a: focus-visible{
     left: 25px;
     color:rgba(255, 255, 255, 0.65);
     font-size:9px;
-    letter-spacing: :0.15em;
+    letter-spacing: 0.15em;
 }
 .art-index{
     top: 25px;
@@ -328,7 +328,7 @@ a: focus-visible{
 }
 .project-info h4{
     font-size: 17px;
-    letter-spacing: : -0.03em;;
+    letter-spacing:  -0.03em;;
 }
 .project-info p{
     margin-top: 6px;
@@ -353,11 +353,10 @@ a: focus-visible{
     margin-top:105px;
 }
 .other-project-grid {
-    display: grid {
-        display: grid;
-        grid-template-columns: repeat(2,minmax(0, 1fr));
-        gap: 22px;
-    };
+    display: grid;
+    grid-template-columns: repeat(2,minmax(0, 1fr));
+    gap: 22px;
+    
 }
 .other-art{
     min-height:250px;
@@ -741,20 +740,20 @@ about-lead{
         grid-template-columns : 1fr;
         gap: 15px;
     }
-    .other-heading 
-        margin-top: 75px;
+    .other-heading {
+        margin-top: 75px};
     
     .illustration-grid{
         grid-template-columns: 1fr 1fr;
         gap:15px;
     }
-    .illustration-card:nth-child(2);
+    .illustration-card:nth-child(2),
     .illustration-card:nth-child(3) {
         margin-top:0;
     }
-    .illustration-card: last-child{
+    .illustration-card:last-child{
         grid-column : 1/ -1;
-        width:70%
+        width:70%;
         margin:0 auto;
 
     }
@@ -779,7 +778,7 @@ about-lead{
     *,
     *::before,
     *::after {
-        scroll-behaviour: auto !important;
+        scroll-behavior: auto !important;
         animation-duration: 0.01ms !important;
         transition-duration: 0.01ms !important;
     }
